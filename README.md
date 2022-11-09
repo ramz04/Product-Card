@@ -20,7 +20,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![Screenshot (40)]((https://user-images.githubusercontent.com/55752850/200811036-96457669-6704-4c39-83b1-a60ebc6a8062.png)
+![Screenshot (40)](https://user-images.githubusercontent.com/55752850/200811036-96457669-6704-4c39-83b1-a60ebc6a8062.png)
 
 ![Screenshot (41)](https://user-images.githubusercontent.com/55752850/200811159-4477949a-604d-4f30-badf-49643032a05d.png)
 
