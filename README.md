@@ -29,8 +29,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Github](https://github.com/ramz04/Product-Card/)
-- Live Site URL: [Netlify](https://your-live-site-url.com](https://darling-youtiao-5a43d3.netlify.app/))
+- Solution URL: [Github](https://github.com/ramz04/Product-Card)
+- Live Site URL: [Vercel](https://product-card-neon.vercel.app/)
 
 ### Built with
 
