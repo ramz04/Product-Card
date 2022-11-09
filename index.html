@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&display=swap');
+      </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Cream: 'hsl(30, 38%, 92%)',
+            darkcyan: 'hsl(158, 36%, 37%)',
+            verydarkblue: 'hsl(212, 21%, 14%)',
+            darkgrayishblue: 'hsl(228, 12%, 48%)',
+            white: 'hsl(0, 0%, 100%)',
+          }
+        }
+      }
+    }
+  </script>
+
+
+</head>
+<body class="bg-Cream flex justify-center items-center h-screen p-6">
+  <!-- Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:shrink-0 md:basis-1/2 ">
+        <img class="h-48 w-full object-cover md:h-full md:w-full" src="/images/image-product-desktop.jpg" alt="Perfume">
+      </div>
+      <div class="p-8 md:basis-1/2">
+        <h3 class="uppercase text-darkgrayishblue text-left tracking-widest font-medium text-sm  px-3" id="textone" style="font-family: 'Montserrat', sans-serif;">Perfume</h3>
+          <h1 class="text-verydarkblue font-black text-4xl mt-3 px-3" style="font-family: 'Fraunces', serif;" id="texttwo">Gabrielle Essence
+             Eau De 
+             Parfum</h1>
+          <p class="mt-4 text-darkgrayishblue text-left  font-medium font-serif px-3" style="font-family: 'Montserrat', sans-serif;" id="textthree">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+            <div id="price-wrapper" class=" mt-3 pl-3 flex items-center gap-3">
+              <span class="font-black tracking-wide text-4xl text-darkcyan" style="font-family: 'Fraunces', serif;">$149.99</span>
+              <span class="line-through ml-2 text-darkgrayishblue font-medium text-sm font-mono" style="font-family: 'Montserrat', sans-serif;">$169.99</span>
+            </div>
+          <button id='btncart' class=" mt-5 ml-1 bg-darkcyan text-white text-center flex flex-nowrap items-center justify-center gap-2 py-3 px-16 rounded-lg"><img src="/images/icon-cart.svg" alt=""><span style="font-family: 'Montserrat', sans-serif;"> Add to Cart</span></button>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  
+  
+</body>
+</html>
