@@ -11,7 +11,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-    </style>
+  </style>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&display=swap');
       </style>
@@ -26,6 +26,9 @@
             verydarkblue: 'hsl(212, 21%, 14%)',
             darkgrayishblue: 'hsl(228, 12%, 48%)',
             white: 'hsl(0, 0%, 100%)',
+          },
+          fontFamily:{
+            montserrat : "[Montserrat, sans serif]"
           }
         }
       }
@@ -34,43 +37,39 @@
 
 
 </head>
-<body class="bg-Cream flex justify-center items-center h-screen p-6">
-  <!-- Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart -->
-
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-    <div class="md:flex">
-      <div class="md:shrink-0 md:basis-1/2 ">
-        <img class="h-48 w-full object-cover md:h-full md:w-full" src="/images/image-product-desktop.jpg" alt="Perfume">
-      </div>
-      <div class="p-8 md:basis-1/2">
-        <h3 class="uppercase text-darkgrayishblue text-left tracking-widest font-medium text-sm  px-3" id="textone" style="font-family: 'Montserrat', sans-serif;">Perfume</h3>
-          <h1 class="text-verydarkblue font-black text-4xl mt-3 px-3" style="font-family: 'Fraunces', serif;" id="texttwo">Gabrielle Essence
-             Eau De 
-             Parfum</h1>
-          <p class="mt-4 text-darkgrayishblue text-left  font-medium font-serif px-3" style="font-family: 'Montserrat', sans-serif;" id="textthree">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-            Perfumer-Creator for the House of CHANEL.</p>
-            <div id="price-wrapper" class=" mt-3 pl-3 flex items-center gap-3">
-              <span class="font-black tracking-wide text-4xl text-darkcyan" style="font-family: 'Fraunces', serif;">$149.99</span>
-              <span class="line-through ml-2 text-darkgrayishblue font-medium text-sm font-mono" style="font-family: 'Montserrat', sans-serif;">$169.99</span>
-            </div>
-          <button id='btncart' class=" mt-5 ml-1 bg-darkcyan text-white text-center flex flex-nowrap items-center justify-center gap-2 py-3 px-16 rounded-lg"><img src="/images/icon-cart.svg" alt=""><span style="font-family: 'Montserrat', sans-serif;"> Add to Cart</span></button>
+<body class="bg-Cream h-[100vh]">
+  <main class="flex justify-center items-center h-[90%] p-4 ">
+    <div class="bg-white w-[50vh] md:w-[80vh] rounded-xl shadow-md">
+      <div class="md:flex">
+        <div class="md:basis-1/2">
+          <picture>
+            <source media="(min-width:768px)" class="md:h-full md:rounded-l-lg object-cover" srcset="/images/image-product-desktop.jpg" />
+            <img class="rounded-t-lg md:h-full md:rounded-l-lg md:rounded-r-none   shrink " src="images/image-product-mobile.jpg" alt="Perfume">
+          </picture>
+          
+        </div>
+        <div class="md:basis-1/2 p-6">
+          <h3 class="uppercase text-darkgrayishblue text-left tracking-widest font-medium text-sm" id="textone" style="font-family: 'Montserrat', sans-serif;">Perfume</h3>
+            <h1 class="text-verydarkblue font-black tracking-wide text-3xl mt-3" style="font-family: 'Fraunces', serif;">Gabrielle Essence
+               Eau De 
+               Parfum</h1>
+            <p class="mt-3 text-darkgrayishblue text-left" style="font-family: 'Montserrat', sans-serif;" id="textthree">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.</p>
+              <div id="price-wrapper" class=" mt-2 md:mt-3 flex items-center gap-3">
+                <span class="font-black tracking-wide text-3xl text-darkcyan" style="font-family: 'Fraunces', serif;">$149.99</span>
+                <span class="line-through ml-2 text-darkgrayishblue font-medium text-sm font-mono" style="font-family: 'Montserrat', sans-serif;">$169.99</span>
+              </div>
+            <button id='btncart' class=" mt-3 md:mt-6 bg-darkcyan text-white text-center flex flex-nowrap items-center justify-center gap-2 py-3 w-full rounded-lg hover:bg-verydarkblue"><img src="/images/icon-cart.svg" alt=""><span style="font-family: 'Montserrat', sans-serif;"> Add to Cart</span></button>
+        </div>
       </div>
     </div>
-  </div>
-
+  
+      </div>
     </div>
+  </main> 
+  <div class="text-xs text-center mb-2 text-black" style="font-family: 'Fraunces', serif;" >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-green-400  hover:text-darkcyan" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ramz04" class="text-green-400  hover:text-darkcyan ">Abdul-Rahman Wunpini</a>.
   </div>
-  
-  
 </body>
 </html>
