@@ -37,29 +37,29 @@
 
 
 </head>
-<body class="bg-Cream h-[100vh]">
-  <main class="flex justify-center items-center h-[90%] p-4 ">
-    <div class="bg-white w-[50vh] md:w-[80vh] rounded-xl shadow-md">
+<body class="bg-Cream h-screen">
+  <main class="flex justify-center items-center h-[95%]  p-4 ">
+    <div class="bg-white w-[50vh]   md:w-[600px] rounded-xl shadow-md">
       <div class="md:flex">
-        <div class="md:basis-1/2">
+        <div class="md:shrink-0 md:basis-1/2">
           <picture>
             <source media="(min-width:768px)" class="md:h-full md:rounded-l-lg object-cover" srcset="/images/image-product-desktop.jpg" />
-            <img class="rounded-t-lg md:h-full md:rounded-l-lg md:rounded-r-none   shrink " src="images/image-product-mobile.jpg" alt="Perfume">
+            <img class="rounded-t-lg md:w-full md:rounded-l-lg md:rounded-r-none  md:h-full" src="images/image-product-mobile.jpg" alt="Perfume">
           </picture>
           
         </div>
-        <div class="md:basis-1/2 p-6">
+        <div class="md:basis-1/2 p-6 md:p-8 flex flex-col justify-around items-start">
           <h3 class="uppercase text-darkgrayishblue text-left tracking-widest font-medium text-sm" id="textone" style="font-family: 'Montserrat', sans-serif;">Perfume</h3>
-            <h1 class="text-verydarkblue font-black tracking-wide text-3xl mt-3" style="font-family: 'Fraunces', serif;">Gabrielle Essence
+            <h1 class="text-verydarkblue font-black tracking-wide md:text-4xl md:mt-5 text-3xl md:text-4xl mt-3" style="font-family: 'Fraunces', serif;">Gabrielle Essence
                Eau De 
                Parfum</h1>
-            <p class="mt-3 text-darkgrayishblue text-left" style="font-family: 'Montserrat', sans-serif;" id="textthree">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            <p class="mt-3 md:mt-4 text-darkgrayishblue text-left" style="font-family: 'Montserrat', sans-serif;" id="textthree">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
               Perfumer-Creator for the House of CHANEL.</p>
-              <div id="price-wrapper" class=" mt-2 md:mt-3 flex items-center gap-3">
-                <span class="font-black tracking-wide text-3xl text-darkcyan" style="font-family: 'Fraunces', serif;">$149.99</span>
+              <div id="price-wrapper" class=" mt-2 md:mt- flex items-center gap-3">
+                <span class="font-black tracking-wide md:text-4xl text-3xl text-darkcyan text-4xl" style="font-family: 'Fraunces', serif;">$149.99</span>
                 <span class="line-through ml-2 text-darkgrayishblue font-medium text-sm font-mono" style="font-family: 'Montserrat', sans-serif;">$169.99</span>
               </div>
-            <button id='btncart' class=" mt-3 md:mt-6 bg-darkcyan text-white text-center flex flex-nowrap items-center justify-center gap-2 py-3 w-full rounded-lg hover:bg-verydarkblue"><img src="/images/icon-cart.svg" alt=""><span style="font-family: 'Montserrat', sans-serif;"> Add to Cart</span></button>
+            <button id='btncart' class=" mt-3 md:mt-7 bg-darkcyan text-white text-center flex items-center justify-center gap-2 py-3 w-full rounded-lg hover:bg-verydarkblue"><img src="/images/icon-cart.svg" alt=""><span style="font-family: 'Montserrat', sans-serif;"> Add to Cart</span></button>
         </div>
       </div>
     </div>
